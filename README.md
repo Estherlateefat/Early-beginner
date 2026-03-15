@@ -6,7 +6,7 @@ Collects full name, email, password, age, gender, profile pic (JPG), hobbies, co
 Basic form validation (required fields, email format, age range)
 Submit and Reset buttons
 Usage
-Open `index.html` in a browser to view the form
+Open `form.html` in a browser to view the form
 Fill in details and submit
 Author
 Suara Lateefat Esther
