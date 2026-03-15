@@ -8,14 +8,15 @@
 <body>
     <header> 
         <div>
-            <p><strong>Name:</strong> Suara Lateefat Esther <br>
-            <strong>Department:</strong> Frontend Development</p>
+         <h1><strong>Name:</strong> Suara Lateefat Esther <br>
+            <strong>Department:</strong> Frontend Development</h1>
+           
         </div> 
     </header>
 
     <main> 
        <section style="text-align: justify;"> 
-        <h1 style="text-align: center;">Form Student Information</h1>
+        <h2 style="text-align: center;">Form Student Information</h2>
       
           <form action="/submit" method="get">
           <p>
@@ -35,12 +36,12 @@
           
           <p>
             <label for="age">Age:</label>
-            <input type="number" name="age" id="age" min="16" max="60" value="16" required>
+            <input type="number" name="age" id="age" min="16" max="60" value="16">
           </p>
 
-          <h2>Gender:</h2>
+          <h3>Gender:</h3>
           <p>
-            <input type="radio" id="male" name="gender" value="male" required>
+            <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             
             <input type="radio" id="female" name="gender" value="female">
@@ -52,10 +53,10 @@
 
           <p>
             <label for="profile">Student Profile (JPG only):</label>
-            <input type="file" accept=".jpg, .jpeg" name="profile" id="profile" required>
+            <input type="file" accept=".jpg, .jpeg" name="profile" id="profile">
           </p>
 
-          <h2>Hobbies:</h2>
+          <h3>Hobbies:</h3>
           <p> 
             <input type="checkbox" id="music" name="hobbies" value="music">
             <label for="music">Music</label>
@@ -65,11 +66,14 @@
             
             <input type="checkbox" id="reading" name="hobbies" value="reading">
             <label for="reading">Reading</label>
+            
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label>
           </p>
 
           <p>
             <label for="country">Select your country</label>
-            <select id="country" name="country" required>
+            <select id="country" name="country">
                 <option value="" disabled selected>Select an option</option>
                 <option value="us">United States</option>
                 <option value="uk">United Kingdom</option>
@@ -88,7 +92,8 @@
           </div>
         </form>
       </section>
-    </main> <footer>
+    </main>
+     <footer>
         <p style="text-align: center;">&lt; &lt; &lt; &copy; Esther 2026 &gt; &gt; &gt;</p>
     </footer>
 </body>
