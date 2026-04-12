@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            height: 800px;
+        }
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+     gap: 1em; 
+ grid-template-areas: 
+    "box1 box1 box1 box1 box1 box1"
+    "box2 box3 box3 box3 box3 box4"
+    "box2 box5 box5 box5 box5 box5";
+
+
+    /* grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box5"; */
+
+}
+.box1  {
+    background-color:black;
+    height: 30px;
+    font-size: x-small;
+    
+    
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    
+
+}
+.box {
+    background-color: blue;
+}
+.box2 {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 7%, 83%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box3 {
+background-color: black;
+display: flex;
+gap: 10px;
+ /* flex-direction: row;  */
+
+}
+.new {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.new a{
+    text-decoration: none;
+    color: white;
+}
+p {
+    color: white;
+}
+p a{
+    color: white;
+}
+
+
+#aplus {
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+#aplus a {
+    color: yellow;
+    font-size: xx-small; 
+    /* display: flex; 
+     /* flex-direction: row; */
+} 
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box1" style="grid-area: box1;">Header
+<nav>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">JAVASCRIPT</a>
+    <a href="#">SQL</a>
+    <a href="#">PYTHON</a>
+    <a href="#">JAVA</a>
+    <a href="#">PHP</a>
+    <a href="#">HOW TO</a>
+    <a href="#">W3 CSS</a>
+    <a href="#">C</a>
+    <a href="#">C++</a>
+</nav>
+    </div>
+    <div class="box2" style="grid-area: box2;">Menu
+        <div class="box21" style="font-size: x-small;">
+            <div class="col">HTML Tutorial</div>
+            <div class="col">HTML HOME</div>
+            <div class="col">HTML Introduction</div>
+            <div class="col">HTML Editors</div>
+            <div class="col">HTML Basic</div>
+            <div class="col">HTML Elements</div>
+            <div class="col">HTML Attributes</div>
+            <div class="col">HTML Headings</div>
+        </div>
+    </div>
+    <div class="box" style="grid-area: box3;">Main</div>
+    <div class="box" style="grid-area: box4;">Right</div>
+    <div class="box3" style="grid-area: box5;">Footer
+       <div>
+        <nav id="aplus">
+            <li><a href="#">PLUS</a></li>
+                        <li><a href="#">SPACES</a></li>
+                        <li><a href="#">GET CERTIFIED</a></li>
+                        <li><a href="#">FOR TEACHERS</a></li>
+                        <li><a href="#"> BOOTCAMPS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+        </nav>
+        <div class="new">
+            <div>
+                <h3 style="color: white; text-align: center;">Top Examples</h3>
+    
+                <ul> 
+                        <li><a href="#">HTML TutoriaL</a></li>
+                        <li><a href="#">CSS Tutorial</a></li>
+                        <li><a href="#">JavaScript Tutorial</a></li>
+                        <li><a href="#">How to Tutorial</a></li>
+                        <li><a href="#"> SQL Tutorial</a></li>
+                        <li><a href="#">Python Tutorial</a></li>
+                        <li><a href="#">W3 CSS Tutorial</a></li>
+                        <li><a href="#">Bootstrap Tutoriall</a></li>
+                        <li><a href="#">PHP Tutorial</a></li>
+                        <li><a href="#">Java Tutorial</a></li>
+                        <li><a href="#">C++ Tutorial</a></li>
+                        <li><a href="#"> jQuery Tutorial</a></li>
+                    </ul>
+                
+        </div>
+                
+                 <div>
+                    <h3 style="color: white; text-align: center;">Top References</h3>
+                    <ul>
+                        <li><a href="#">HTML References</a></li>
+                        <li><a href="#">CSS References</a></li>
+                        <li><a href="#">JavaScript References</a></li>
+                        <li><a href="#"> SQL References</a></li>
+                        <li><a href="#">Python References</a></li>
+                        <li><a href="#">W3 CSS References</a></li>
+                        <li><a href="#">Bootstrap References</a></li>
+                        <li><a href="#">PHP References</a></li>
+                        <li><a href="#">Java References</a></li>
+                        <li><a href="#">C++ References</a></li>
+                        <li><a href="#"> jQuery References</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; text-align: center;">Top Examples</h3>
+        
+                <ul>
+                        <li><a href="#">HTML Examples</a></li>
+                        <li><a href="#">CSS Examples</a></li>
+                        <li><a href="#">JavaScript Examples</a></li>
+                        <li><a href="#">How to Examples</a></li>
+                        <li><a href="#"> SQL Examples</a></li>
+                        <li><a href="#">Python Examples</a></li>
+                        <li><a href="#">W3 CSS Examples</a></li>
+                        <li><a href="#">Bootstrap Examples</a></li>
+                        <li><a href="#">PHP Examples</a></li>
+                        <li><a href="#">Java Examples</a></li>
+                        <li><a href="#">C++ Examples</a></li>
+                        <li><a href="#"> jQuery Examples</a></li>
+                    </ul>
+        </div>
+        <div>
+            <h3 style="color: white; text-align: center;">Get Certified</h3>
+         <ul>
+                        <li><a href="#">HTML Certificate</a></li>
+                        <li><a href="#">CSS Certificate</a></li>
+                        <li><a href="#">JavaScript Certificate</a></li>
+                        <li><a href="#">Front End Certificate</a></li>
+                        <li><a href="#"> SQL Certificate</a></li>
+                        <li><a href="#">Python Certificate</a></li>
+                        <li><a href="#">PHP Certificate</a></li>
+                        <li><a href="#">Java Certificate</a></li>
+                        <li><a href="#">C++ Certificate</a></li>
+                         <li><a href="#">C# Certificate</a></li>
+                          <li><a href="#">XML Certificate</a></li>
+                        
+                    </ul>
+        </div>
+             </div>
+        
+             
+           
+                
+                
+               
+                
+               
+               
+               
+                
+                
+     <p>W3schools is optimized for learning and training examples might simplified to implore reading and learning. Tutorials, references, and examples are constantly reviewed to
+        avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our <a href="#">terms of use</a>,<a href="#">cookies</a>, and <a href="#">privacy policy</a>.
+
+     </p>          
+     <p style="text-align: center;"><a href="#">Copyright 1999-2026</a> by Refsnes Data. All Rights Reserved. <a href="#">W3Schools is Powered by W3 CSS.</a></p>          
+            
+            
+            
+           
+        
+        
+       
+    
+    
+   </div>
+</body>
+</html>
