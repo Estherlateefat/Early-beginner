@@ -6,6 +6,8 @@
     <title>My Website</title>
     <style>
        *{
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
        } 
        
@@ -84,10 +86,10 @@
 
     
        /* Responsive CSS */
-        @media (max-width: 768px) {
+         @media (max-width: 768px) {
         .navbar ul {
             flex-direction: column;
-            align-items: flex-start;
+            /* align-items: flex-start; */
         }
 
        }
@@ -95,19 +97,19 @@
 
        h1 {
         font-size: 1.5rem;
-       }
+       } 
        
       
-       .button {
+        .button {
         padding: 10px 15px;
-        bottom: 10px;
-        right: 10px;
-       }
-      
+        bottom: 10px; 
+        right: 10px; 
+        } 
+        
     </style>
 </head>
 <body>
- 
+ <header>
     <div id="container">
 
   <div id="label">New</div>
@@ -118,36 +120,45 @@
   <a href="#">Contact</a>
 </nav>
     </div>
-<h1 class="web">My Educational Website</h1>
+ </header>
+    <main>
+        <section>
+            <h1 class="web">My Educational Website</h1>
 <p>My educational website is a platform created to help
     students learn easily and effectively. It provides
     useful information and learning materials for 
     different subjects
 </p>
-<!-- sections -->
-<h2>Features of my website:</h2>
+        </section>
+        
+<section><h2>Features of my website:</h2>
 <ul>
     <li>lessons: Simple explanations on subjects like Mathematics, English, and Basic Science</li>
     <li>Tutorials: Step-by-step guides to help students understand topics better </li>
     <li>Quizzes: Short tests to check understanding</li>
     <li>Study Materials: Notes and examples for revision</li>
 </ul>
+</section>
 
-<h2>Examples of Content:</h2>
+<section><h2>Examples of Content:</h2>
 <ul>
     <li>Mathematics: Number bases, algebra, and calculations</li>
     <li>English: Grammar, essay writing, and comprehension</li>
     <li>Science: Energy,sound, and basic experiments.</li>
 </ul>
+</section>
 
-<h2>Tools used to build the website:</h2>
+<section>
+    <h2>Tools used to build the website:</h2>
 <ul>
     <li>HTML -to create the structure</li>
     <li>CSS -to design and style the website</li>
     <li>JavaScript - to add functionality like quizzes</li>
 </ul>
+</section>
 
-<h2>Purpose of the website:</h2>
+<section>
+    <h2>Purpose of the website:</h2>
 <ul>
     <li>To help students understand their subjects better</li>
     <li>To make learning simple and interesting</li>
@@ -157,7 +168,13 @@
 
 
 
-    <p style="color: blue; text-align: center;">&lt;&lt;&lt;&copy; 2023 My Educational Website. All rights reserved.&gt;&gt;&gt;</p>
-  
+</section>
+
+</main>
+<footer>
+<p style="color: blue; text-align: center;">&lt;&lt;&lt;&copy; 2023 My Educational Website. All rights reserved.&gt;&gt;&gt;</p>
+
+</footer>
+      
 </body>
 </html>
